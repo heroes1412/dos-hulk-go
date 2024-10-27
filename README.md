@@ -14,6 +14,8 @@ connection pool on the same hardware than Python version can.
 This tool targeted for stress testing and may really down badly configured server or badly made app. Use it carefully.
 
 Examples:
+docker run --add-host xxx.com:118.68.218.45 -d h2372/dos-hulk-go -site https://xxx.com/
+docker run -d --restart unless-stopped h2372/dos-hulk-go -site https://xxx.com/****
 
     $ hulk -site http://example.com/test/ 2>/dev/null
 
